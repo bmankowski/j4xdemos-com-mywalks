@@ -6,6 +6,7 @@
 CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `title` varchar(64) NOT NULL,
+  `positon_name` text NOT NULL,
   `description` text NOT NULL,
   `distance` decimal(10,0) NOT NULL,
   `toilets` tinyint(1) NOT NULL DEFAULT '0',
@@ -19,16 +20,16 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `state` TINYINT NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci;
 
---
+-- 
 -- Dumping data for table `#__jobpositions`
 --
 
-INSERT IGNORE INTO `#__jobpositions` (`id`, `title`, `description`, `distance`, `toilets`, `cafe`, `hills`, `bogs`, `picture`, `width`, `height`, `alt`) VALUES
-(1, 'City Centre', 'Highligts of Anycity', '5', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(2, 'Woods', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
-(3, 'Hills', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),
-(4, 'Lake Thingy', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(5, 'Castle Railway Track', 'Walk along the line of the old railway track from start point car park to Thing castle', '2', 1, 1, 0, 0, NULL, NULL, NULL, '');
+INSERT IGNORE INTO `#__jobpositions` (`id`, `title`, `positon_name` , `description`, `distance`, `toilets`, `cafe`, `hills`, `bogs`, `picture`, `width`, `height`, `alt`) VALUES
+(1, 'City Centre', 'SQL', 'Highligts of Anycity', '5', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(2, 'Woods', 'SQL2', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
+(3, 'Hills', 'SQL3', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),
+(4, 'Lake Thingy', 'SQL4', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(5, 'Castle Railway Track', 'SQL5', 'Walk along the line of the old railway track from start point car park to Thing castle', '2', 1, 1, 0, 0, NULL, NULL, NULL, '');
 
 -- --------------------------------------------------------
 
