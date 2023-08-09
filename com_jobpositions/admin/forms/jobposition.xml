@@ -28,7 +28,14 @@
 			cols="40"
 			required="true"
 		 />
-
+		<field
+			name="position_name"
+			type="textarea"
+			label="COM_JOBPOSITIONS_MYWALK_LABEL_DESCRIPTION"
+			rows="5"
+			cols="40"
+			required="true"
+		 />
 		<field
 			name="distance"
 			type="decimel"

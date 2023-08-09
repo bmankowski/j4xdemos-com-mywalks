@@ -1,4 +1,4 @@
-# Joomla 4x Example Component and Tutorial - Mywalks
+# Joomla 4x Example Component and Tutorial - Jobpositions
 
 A component prepared in 2019 at the Joomla 4.0 Alpha stage for 
 developer demonstration and tutorial purposes. Updated in 2023
@@ -15,7 +15,7 @@ Joomla 4. It should not install or work on earlier Joomla versions.
 
 Download the zip file and install it in Joomla 4. The initial 
 installation may show the success message as an all capitals
-string key. Just look for the Mywalks menu item under Components
+string key. Just look for the Jobpositions menu item under Components
 in the Joomla Administrator menu.
 
 ### Documentation

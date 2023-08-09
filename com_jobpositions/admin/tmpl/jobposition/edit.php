@@ -32,8 +32,8 @@ HTMLHelper::_('behavior.keepalive');
 			<div class="col-md-9">
 				<div class="row">
 					<div class="col-md-6">
-						<?php echo $this->form->renderField('positon_name'); ?>
 						<?php echo $this->form->renderField('description'); ?>
+						<?php echo $this->form->renderField('positon_name'); ?>
 						<?php echo $this->form->renderField('distance'); ?>
 						<?php echo $this->form->renderField('id'); ?>
 					</div>
