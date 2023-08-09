@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
 
-	<fieldset name="details" label="COM_JOBPOSITIONS_MYWALK_TAB_DETAILS">
+	<fieldset name="details" label="COM_JOBPOSITIONS_JOBPOSITION_TAB_DETAILS">
 
 		<field
 			name="id"
@@ -15,7 +15,7 @@
 		<field
 			name="title"
 			type="text"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_TITLE"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_TITLE"
 			size="40"
 			required="true"
 		 />
@@ -23,7 +23,7 @@
 		<field
 			name="description"
 			type="textarea"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_DESCRIPTION"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_DESCRIPTION"
 			rows="5"
 			cols="40"
 			required="true"
@@ -31,7 +31,7 @@
 		<field
 			name="position_name"
 			type="textarea"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_DESCRIPTION"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_DESCRIPTION"
 			rows="5"
 			cols="40"
 			required="true"
@@ -39,7 +39,7 @@
 		<field
 			name="distance"
 			type="decimel"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_DISTANCE"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_DISTANCE"
 			required="true"
 		 />
 
@@ -59,10 +59,10 @@
 
 	</fieldset>
 	
-	<fieldset name="options" label="COM_JOBPOSITIONS_MYWALK_TAB_OPTIONS">
+	<fieldset name="options" label="COM_JOBPOSITIONS_JOBPOSITION_TAB_OPTIONS">
 		<field name="toilets"
 			type="list"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_TOILETS"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_TOILETS"
 		>
 			<option value="0">JNO</option>
 			<option value="1">JYES</option>
@@ -70,7 +70,7 @@
 
 		<field name="cafe"
 			type="list"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_CAFE"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_CAFE"
 			default="0"
 			size="1"
 			>
@@ -80,7 +80,7 @@
 
 		<field name="bogs"
 			type="list"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_BOGS"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_BOGS"
 			default="0"
 			size="1"
 			>
@@ -89,32 +89,32 @@
 		</field>
 	</fieldset>
 
-	<fieldset name="picture" label="COM_JOBPOSITIONS_MYWALK_TAB_PICTURE">
+	<fieldset name="picture" label="COM_JOBPOSITIONS_JOBPOSITION_TAB_PICTURE">
 
 		<field
 			name="picture"
 			type="media"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_PICTURE_URL"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_PICTURE_URL"
 		/>
 
 		<field
 			name="width"
 			type="number"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_PICTURE_WIDTH"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_PICTURE_WIDTH"
 			default="0"
 		 />
 
 		<field
 			name="height"
 			type="number"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_PICTURE_HEIGHT"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_PICTURE_HEIGHT"
 			default="0"
 		 />
 
 		<field
 			name="alt"
 			type="text"
-			label="COM_JOBPOSITIONS_MYWALK_LABEL_PICTURE_ALT"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_PICTURE_ALT"
 			size="40"
 		 />
 	</fieldset>

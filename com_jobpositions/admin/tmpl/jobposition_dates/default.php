@@ -31,7 +31,7 @@ $editIcon = '<span class="fa fa-pen-square me-2" aria-hidden="true"></span>';
 $title = JobpositionsHelper::getWalkTitle($this->state->get('walk_id'))->title;
 $walk_id = $this->state->get('walk_id')
 ?>
-<h3><?php echo Text::_('COM_JOBPOSITIONS_MYWALK_DATES_PAGE_TOP') . ' ' . $walk_id . ': ' . $title; ?></h3>
+<h3><?php echo Text::_('COM_JOBPOSITIONS_JOBPOSITION_DATES_PAGE_TOP') . ' ' . $walk_id . ': ' . $title; ?></h3>
 <form action="<?php echo Route::_('index.php?option=com_jobpositions&view=jobposition_dates'); ?>" method="post" name="adminForm" id="adminForm">
 	<div class="row">
 		<div class="col-md-12">
@@ -53,10 +53,10 @@ $walk_id = $this->state->get('walk_id')
 									<?php echo HTMLHelper::_('searchtools.sort', 'JSTATUS', 'a.published', $listDirn, $listOrder); ?>
 								</th>
 								<th scope="col" style="width:10%;">
-									<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_MYWALK_DATES_LABEL_VISIT_DATE', 'a.published', $listDirn, $listOrder); ?>
+									<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_JOBPOSITION_DATES_LABEL_VISIT_DATE', 'a.published', $listDirn, $listOrder); ?>
 								</th>
 								<th scope="col" style="width:50%;">
-									<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_MYWALK_DATES_LABEL_WEATHER_REPORT', 'a.published', $listDirn, $listOrder); ?>
+									<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_JOBPOSITION_DATES_LABEL_WEATHER_REPORT', 'a.published', $listDirn, $listOrder); ?>
 								</th>
 								<th scope="col" style="width:5%" class="d-none d-md-table-cell">
 									<?php echo HTMLHelper::_('searchtools.sort', 'JGRID_HEADING_ID', 'a.id', $listDirn, $listOrder); ?>

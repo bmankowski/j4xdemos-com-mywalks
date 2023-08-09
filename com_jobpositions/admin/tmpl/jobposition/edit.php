@@ -27,13 +27,13 @@ HTMLHelper::_('behavior.keepalive');
 	<div>
 		<?php echo HTMLHelper::_('uitab.startTabSet', 'myTab', array('active' => 'details')); ?>
 
-		<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'details', Text::_('COM_JOBPOSITIONS_MYWALK_TAB_DETAILS')); ?>
+		<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'details', Text::_('COM_JOBPOSITIONS_JOBPOSITION_TAB_DETAILS')); ?>
 		<div class="row">
 			<div class="col-md-9">
 				<div class="row">
 					<div class="col-md-6">
 						<?php echo $this->form->renderField('description'); ?>
-						<?php echo $this->form->renderField('positon_name'); ?>
+						<?php echo $this->form->renderField('position_name'); ?>
 						<?php echo $this->form->renderField('distance'); ?>
 						<?php echo $this->form->renderField('id'); ?>
 					</div>
@@ -49,7 +49,7 @@ HTMLHelper::_('behavior.keepalive');
 		</div>
 		<?php echo HTMLHelper::_('uitab.endTab'); ?>
 
-		<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'options', Text::_('COM_JOBPOSITIONS_MYWALK_TAB_OPTIONS')); ?>
+		<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'options', Text::_('COM_JOBPOSITIONS_JOBPOSITION_TAB_OPTIONS')); ?>
 		<div class="row">
 			<div class="col-md-12">
 				<?php echo $this->form->renderField('toilets'); ?>
@@ -59,7 +59,7 @@ HTMLHelper::_('behavior.keepalive');
 		</div>
 		<?php echo HTMLHelper::_('uitab.endTab'); ?>
 
-		<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'picture', Text::_('COM_JOBPOSITIONS_MYWALK_TAB_PICTURE')); ?>
+		<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'picture', Text::_('COM_JOBPOSITIONS_JOBPOSITION_TAB_PICTURE')); ?>
 		<div class="row">
 			<div class="col-md-12">
 				<?php echo $this->form->renderField('picture'); ?>

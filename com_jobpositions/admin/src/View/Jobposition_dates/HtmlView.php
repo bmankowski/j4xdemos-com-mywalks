@@ -101,7 +101,7 @@ class HtmlView extends BaseHtmlView
 
 		$toolbar = Toolbar::getInstance('toolbar');
 
-		ToolbarHelper::title(Text::_('COM_JOBPOSITIONS_MYWALK_DATES_PAGE_TITLE'), 'jobposition_dates');
+		ToolbarHelper::title(Text::_('COM_JOBPOSITIONS_JOBPOSITION_DATES_PAGE_TITLE'), 'jobposition_dates');
 
 		if ($canDo->get('core.create'))
 		{

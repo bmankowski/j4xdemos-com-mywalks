@@ -38,7 +38,7 @@ $this->ignore_fieldsets = array('details', 'item_associations', 'jmetadata');
 	<div>
 		<?php echo HTMLHelper::_('uitab.startTabSet', 'myTab', array('active' => 'details')); ?>
 
-		<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'details', Text::_('COM_JOBPOSITIONS_MYWALK_DATE_TAB_DETAILS')); ?>
+		<?php echo HTMLHelper::_('uitab.addTab', 'myTab', 'details', Text::_('COM_JOBPOSITIONS_JOBPOSITION_DATE_TAB_DETAILS')); ?>
 		<div class="row">
 			<div class="col-md-9">
 				<div class="row">

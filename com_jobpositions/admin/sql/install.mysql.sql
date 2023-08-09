@@ -6,7 +6,7 @@
 CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `title` varchar(64) NOT NULL,
-  `positon_name` text NOT NULL,
+  `position_name` text NOT NULL,
   `description` text NOT NULL,
   `distance` decimal(10,0) NOT NULL,
   `toilets` tinyint(1) NOT NULL DEFAULT '0',
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
 -- Dumping data for table `#__jobpositions`
 --
 
-INSERT IGNORE INTO `#__jobpositions` (`id`, `title`, `positon_name` , `description`, `distance`, `toilets`, `cafe`, `hills`, `bogs`, `picture`, `width`, `height`, `alt`) VALUES
+INSERT IGNORE INTO `#__jobpositions` (`id`, `title`, `position_name` , `description`, `distance`, `toilets`, `cafe`, `hills`, `bogs`, `picture`, `width`, `height`, `alt`) VALUES
 (1, 'City Centre', 'SQL', 'Highligts of Anycity', '5', 1, 1, 0, 0, NULL, NULL, NULL, ''),
 (2, 'Woods', 'SQL2', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
 (3, 'Hills', 'SQL3', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),

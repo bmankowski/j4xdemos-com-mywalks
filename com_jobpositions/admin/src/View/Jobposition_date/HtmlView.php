@@ -116,7 +116,7 @@ class HtmlView extends BaseHtmlView
 
 		$toolbar = Toolbar::getInstance();
 		$title = $isNew ? 'ADD' : 'EDIT';
-		$title = Text::_('COM_JOBPOSITIONS_MYWALK_DATE_PAGE_TITLE_' . $title);
+		$title = Text::_('COM_JOBPOSITIONS_JOBPOSITION_DATE_PAGE_TITLE_' . $title);
 		ToolbarHelper::title($title);
 
 		$canDo = ContentHelper::getActions('com_jobpositions');
