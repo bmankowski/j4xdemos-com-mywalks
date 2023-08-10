@@ -6,7 +6,11 @@
 CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `title` varchar(64) NOT NULL,
-  `position_name` text NOT NULL,
+  `job_position_name` text NOT NULL,
+  `job_location` text NOT NULL,
+  `job_start_date` date NOT NULL,
+  `job_end_date` date NOT NULL,
+  `job_description` text NOT NULL,
   `description` text NOT NULL,
   `distance` decimal(10,0) NOT NULL,
   `toilets` tinyint(1) NOT NULL DEFAULT '0',
@@ -24,12 +28,12 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
 -- Dumping data for table `#__jobpositions`
 --
 
-INSERT IGNORE INTO `#__jobpositions` (`id`, `title`, `position_name` , `description`, `distance`, `toilets`, `cafe`, `hills`, `bogs`, `picture`, `width`, `height`, `alt`) VALUES
-(1, 'City Centre', 'SQL', 'Highligts of Anycity', '5', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(2, 'Woods', 'SQL2', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
-(3, 'Hills', 'SQL3', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),
-(4, 'Lake Thingy', 'SQL4', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(5, 'Castle Railway Track', 'SQL5', 'Walk along the line of the old railway track from start point car park to Thing castle', '2', 1, 1, 0, 0, NULL, NULL, NULL, '');
+INSERT IGNORE INTO `#__jobpositions` (`id`, `title`, `job_position_name` ,`job_description`,`job_location`,`job_start_date`,`job_end_date`, `description`, `distance`, `toilets`, `cafe`, `hills`, `bogs`, `picture`, `width`, `height`, `alt`) VALUES
+(1, 'City Centre', 'Analityk SQL', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Warszawa','2023-01-01','2024-01-01' '5', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(2, 'Woods', 'Programista SAS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Warszawa','2023-01-01','', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
+(3, 'Hills', 'Programista Senior Vue', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Warszawa','2023-01-01','', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),
+(4, 'Lake Thingy', 'Programista Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Warszawa','2023-01-01','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(5, 'Castle Railway Track', 'Programista Python / Django', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Warszawa','2023-01-01','', 'Walk along the line of the old railway track from start point car park to Thing castle', '2', 1, 1, 0, 0, NULL, NULL, NULL, '');
 
 -- --------------------------------------------------------
 

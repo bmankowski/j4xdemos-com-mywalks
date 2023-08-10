@@ -33,7 +33,11 @@ HTMLHelper::_('behavior.keepalive');
 				<div class="row">
 					<div class="col-md-6">
 						<?php echo $this->form->renderField('description'); ?>
-						<?php echo $this->form->renderField('position_name'); ?>
+						<?php echo $this->form->renderField('job_position_name'); ?>
+						<?php echo $this->form->renderField('job_description'); ?>
+						<?php echo $this->form->renderField('job_location'); ?>
+						<?php echo $this->form->renderField('job_start_date'); ?>
+						<?php echo $this->form->renderField('job_end_date'); ?>
 						<?php echo $this->form->renderField('distance'); ?>
 						<?php echo $this->form->renderField('id'); ?>
 					</div>

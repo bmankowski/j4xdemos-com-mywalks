@@ -29,14 +29,40 @@
 			required="true"
 		 />
 		<field
-			name="position_name"
+			name="job_position_name"
+			type="text"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_POSITION_NAME"
+			size="200"
+			required="true"
+		 />
+		<field
+			name="job_description"
 			type="textarea"
-			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_DESCRIPTION"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_JOB_DESCRIPTION"
 			rows="5"
 			cols="40"
 			required="true"
 		 />
 		<field
+			name="job_location"
+			type="text"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_LOCATION"
+			size="100"
+			required="true"
+		 />
+		<field
+			name="job_start_date"
+			type="calendar"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_START_DATE"
+			default="0"
+		 />
+		<field
+			name="job_end_date"
+			type="calendar"
+			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_END_DATE"
+			default="0"
+		 />
+                 <field
 			name="distance"
 			type="decimel"
 			label="COM_JOBPOSITIONS_JOBPOSITION_LABEL_DISTANCE"

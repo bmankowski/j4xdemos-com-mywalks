@@ -45,7 +45,7 @@ $editIcon = '<span class="fa fa-pen-square me-2" aria-hidden="true"></span>';
 						<?php echo HTMLHelper::_('searchtools.sort', 'JGLOBAL_TITLE', 'a.title', $listDirn, $listOrder); ?>
 					</th>
 					<th scope="col" class="w-25">
-						<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_JOBPOSITIONS_LABEL_POSITION_NAME', 'a.position_name', $listDirn, $listOrder); ?>
+						<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_JOBPOSITIONS_LABEL_POSITION_NAME', 'a.job_position_name', $listDirn, $listOrder); ?>
 					</th>                                        
 					<th scope="col" class="w-25">
 						<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_JOBPOSITIONS_LABEL_DESCRIPTION', 'a.description', $listDirn, $listOrder); ?>
@@ -91,7 +91,7 @@ $editIcon = '<span class="fa fa-pen-square me-2" aria-hidden="true"></span>';
 						</a>
 					</th>
 					<td class="">
-						<?php echo $item->position_name; ?>
+						<?php echo $item->job_position_name; ?>
 					</td>                                        
 					<td class="">
 						<?php echo $item->description; ?>
