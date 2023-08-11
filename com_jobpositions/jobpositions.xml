@@ -3,9 +3,9 @@
 	<name>com_jobpositions</name>
 	<!-- The following elements are optional and free of formatting conttraints -->
 	<creationDate>August 2019</creationDate>
-	<author>Clifford E Ford</author>
-	<authorEmail>cliff@ford.myzen.co.uk</authorEmail>
-	<authorUrl>http://www.fford.me.uk/</authorUrl>
+	<author>Bartlomiej Mankowski</author>
+	<authorEmail>bmankowski@itconnect.pl</authorEmail>
+	<authorUrl>itconnect.pl</authorUrl>
 	<copyright>Copyright (C) 2019-2023 Clifford E Ford, All rights reserved.</copyright>
 	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
 	<!--  The version string is recorded in the components table -->
