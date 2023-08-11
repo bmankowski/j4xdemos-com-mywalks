@@ -31,18 +31,12 @@ $listDirn  = $this->escape($this->state->get('list.direction'));
   <thead>
     <tr>
  		<th scope="col">
-			<?php echo HTMLHelper::_('searchtools.sort', 'JGLOBAL_TITLE', 'a.title', $listDirn, $listOrder); ?>
-		</th>
-		<th scope="col"><?php echo Text::_('COM_JOBPOSITIONS_LIST_DESCRIPTION'); ?></th>
-		<th scope="col">
-			<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_LIST_DISTANCE', 'a.distance', $listDirn, $listOrder); ?>
+			<?php echo HTMLHelper::_('searchtools.sort', 'JGLOBAL_TITLE', 'a.job_position_name', $listDirn, $listOrder); ?>
 		</th>
 		<th scope="col">
-			<?php echo Text::_('COM_JOBPOSITIONS_LIST_LAST_VISIT'); ?>
+			<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_LIST_LOCATION', 'a.job_location', $listDirn, $listOrder); ?>
 		</th>
-		<th scope="col">
-			<?php echo Text::_('COM_JOBPOSITIONS_LIST_NVISITS'); ?>
-		</th>
+		<th scope="col"><?php echo Text::_('COM_JOBPOSITIONS_LIST_START_DATE'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -52,11 +46,9 @@ $listDirn  = $this->escape($this->state->get('list.direction'));
 	?>
 	<tr>
 		<td><a href="<?php echo Route::_(JobpositionsHelperRoute::getWalkRoute($item->id, $slug)); ?>">
-		<?php echo $item->title; ?></a></td>
-		<td><?php echo $item->description; ?></td>
-		<td><?php echo $item->distance; ?></td>
-		<td><?php echo $item->last_visit //$item->lastvisit; ?></td>
-		<td><?php echo $item->nvisits; ?></td>
+		<?php echo $item->job_position_name; ?></a></td>
+		<td><?php echo $item->job_location; ?></td>
+		<td><?php echo $item->job_start_date; ?></td>
 	</tr>
 	<?php endforeach; ?><?php //endif; ?>
 	</tbody>

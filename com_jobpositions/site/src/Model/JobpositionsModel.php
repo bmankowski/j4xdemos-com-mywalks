@@ -35,8 +35,8 @@ class JobpositionsModel extends ListModel
 		{
 			$config['filter_fields'] = array(
 				'id', 'a.id',
-				'title', 'a.title',
-				'distance', 'a.distance',
+				'job_position_name', 'a.job_position_name',
+				'job_location', 'a.job_location',
 			);
 		}
 
