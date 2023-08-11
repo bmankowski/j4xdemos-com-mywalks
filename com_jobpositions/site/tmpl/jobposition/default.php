@@ -13,13 +13,15 @@ use Joomla\CMS\Language\Text;
 use Joomla\CMS\Router\Route;
 
 ?>
+
 <div class="page-header">
-	<h1><?php echo $this->item->title; ?></h1>
+	<h1><?php echo $this->item->job_position_name; ?></h1>
 </div>
+<h2><?php echo Text::_('COM_JOBPOSITIONS_JOB_DESCRIPTION'); ?></h2>
 
-<p><?php echo $this->item->description; ?>!</p>
+<h2><?php echo $this->item->job_description; ?></h2> 
 
-<h2><?php echo Text::_('COM_JOBPOSITIONS_WALK_REPORTS'); ?></h2>
+<?php /*
 
 <div class="table-responsive">
   <table class="table table-striped">
@@ -39,5 +41,6 @@ use Joomla\CMS\Router\Route;
 	</tbody>
   </table>
 </div>
+*/?>
 
 <a href="<?php echo Route::_('index.php?option=com_jobpositions'); ?>"><?php echo Text::_('COM_JOBPOSITIONS_WALK_BACK_TO_WALKS'); ?></a>
