@@ -2,11 +2,11 @@
 <extension type="component" method="upgrade">
 	<name>com_jobpositions</name>
 	<!-- The following elements are optional and free of formatting conttraints -->
-	<creationDate>August 2019</creationDate>
+	<creationDate>August 2023</creationDate>
 	<author>Bartlomiej Mankowski</author>
 	<authorEmail>bmankowski@itconnect.pl</authorEmail>
 	<authorUrl>itconnect.pl</authorUrl>
-	<copyright>Copyright (C) 2019-2023 Clifford E Ford, All rights reserved.</copyright>
+	<copyright>Copyright (C) 2019-2023 Clifford E Ford, 2023 Bartlomiej Mankowski All rights reserved.</copyright>
 	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
 	<!--  The version string is recorded in the components table -->
 	<version>0.3.0</version>
