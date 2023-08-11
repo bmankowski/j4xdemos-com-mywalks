@@ -33,7 +33,13 @@ INSERT IGNORE INTO `#__jobpositions` (`id`, `title`, `job_position_name` ,`job_d
 (2, 'Woods', 'Programista SAS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Kraków','2023-01-11','', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
 (3, 'Hills', 'Programista Senior Vue', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Gdańsk','2023-01-15','', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),
 (4, 'Lake Thingy', 'Programista Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(5, 'Castle Railway Track', 'Programista Python / Django', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Wrocław','2023-03-7','', 'Walk along the line of the old railway track from start point car park to Thing castle', '2', 1, 1, 0, 0, NULL, NULL, NULL, '');
+(5, 'Lake Thingy', 'Programista HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(6, 'Lake Thingy', 'Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(7, 'Lake Thingy', 'Analityk Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(8, 'Lake Thingy', 'Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(9, 'Lake Thingy', 'Analityk HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(10, 'Lake Thingy', 'Analityk Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
+(11, 'Castle Railway Track', 'Programista Python / Django', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Wrocław','2023-03-7','', 'Walk along the line of the old railway track from start point car park to Thing castle', '2', 1, 1, 0, 0, NULL, NULL, NULL, '');
 
 -- --------------------------------------------------------
 
