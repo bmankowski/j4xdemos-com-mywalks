@@ -11,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `job_start_date` date NOT NULL,
   `job_end_date` date NOT NULL,
   `job_contract_type` text NOT NULL,
-  `job_part_of_employment` text NOT NULL,
   `job_part_of_employment` text NOT NULL, --part-time, full-time
   `job_level` text NOT NULL,
   `job_employment_type` text NOT NULL, --hybrid, on-site
@@ -24,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `job_nice_to_have` text NOT NULL,
   `job_project_management_system` text NOT NULL,
   `job_what_to_offer` text NOT NULL,
-  `job_ssportcardportcard` tinyint(1) NOT NULL DEFAULT '0',
+  `job_sportcard` tinyint(1) NOT NULL DEFAULT '0',
   `job_healthplan` tinyint(1) NOT NULL DEFAULT '0',
   `job_healthplan` tinyint(1) NOT NULL DEFAULT '0',
   `job_lifeinsurance` tinyint(1) NOT NULL DEFAULT '0',
