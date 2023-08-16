@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `toilets` tinyint(1) NOT NULL DEFAULT '0',
   `cafe` tinyint(1) NOT NULL DEFAULT '0',
   `hills` int(11) NOT NULL DEFAULT '0',
-  `bogs` int(11) NOT NULL DEFAULT '0',
+  `bogs` int(11) NOT NULL DEFAULT '0', 
   `picture` varchar(128) DEFAULT NULL,
   `width` int(11) DEFAULT NULL,
   `height` int(11) DEFAULT NULL,
