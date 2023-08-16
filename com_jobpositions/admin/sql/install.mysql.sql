@@ -25,7 +25,6 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `job_what_to_offer` text NOT NULL,
   `job_sportcard` tinyint(1) NOT NULL DEFAULT '0',
   `job_healthplan` tinyint(1) NOT NULL DEFAULT '0',
-  `job_healthplan` tinyint(1) NOT NULL DEFAULT '0',
   `job_lifeinsurance` tinyint(1) NOT NULL DEFAULT '0',
   `description` text NOT NULL,
   `distance` decimal(10,0) NOT NULL,
