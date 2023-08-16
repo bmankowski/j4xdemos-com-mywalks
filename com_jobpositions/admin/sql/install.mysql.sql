@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
 
 -- 
 -- Dumping data for table `#__jobpositions`
---
+-- 
 
 INSERT IGNORE INTO `#__jobpositions` (`id`, `title`, `job_position_name` ,`job_description`,`job_location`,`job_start_date`,`job_end_date`, `description`, `distance`, `toilets`, `cafe`, `hills`, `bogs`, `picture`, `width`, `height`, `alt`) VALUES
 (1, 'City Centre', 'Analityk SQL', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Warszawa','2023-01-01','2024-06-01', 'Walks somewhere','5', 1, 1, 0, 0, NULL, NULL, NULL, ''),
