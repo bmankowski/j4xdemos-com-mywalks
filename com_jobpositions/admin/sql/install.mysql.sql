@@ -10,7 +10,6 @@ CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `job_location` text NOT NULL,
   `job_start_date` date NOT NULL,
   `job_end_date` date NOT NULL,
-  `job_end_date` date NOT NULL,
   `job_contract_type` text NOT NULL,
   `job_part_of_employment` text NOT NULL,
   `job_part_of_employment` text NOT NULL, --part-time, full-time
