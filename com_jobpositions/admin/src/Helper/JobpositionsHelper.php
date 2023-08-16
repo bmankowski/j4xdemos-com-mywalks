@@ -30,7 +30,7 @@ class JobpositionsHelper
 		}
 		$db = Factory::getDbo();
 		$query = $db->getQuery(true);
-		$query->select($db->quoteName('title'))
+		$query->select($db->quoteName('job_position_name'))
 		->from($db->quoteName('#__jobpositions'))
 		->where('id = :id')
 		->bind(':id', $id, ParameterType::INTEGER);

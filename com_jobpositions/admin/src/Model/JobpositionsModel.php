@@ -35,7 +35,6 @@ class JobpositionsModel extends ListModel
 		{
 			$config['filter_fields'] = array(
 				'id', 'a.id',
-				'title', 'a.title',
 				'job_position_name', 'a.job_position_name',
 				'job_description', 'a.job_description',
 				'job_location', 'a.job_location',
@@ -139,13 +138,13 @@ class JobpositionsModel extends ListModel
 			$query->whereIn($db->quoteName('a.state'), array(0, 1));
 		}
 
-		// Filter by search in title.
+		// Filter by search in job_position_name.
 		$search = $this->getState('filter.search');
 
 		if (!empty($search))
 		{
 			$search = '%' . trim($search) . '%';
-			$query->where($db->quoteName('a.title') . ' LIKE :search')
+			$query->where($db->quoteName('a.job_position_name') . ' LIKE :search')
 			->bind(':search', $search, ParameterType::STRING);
 		}
 
@@ -153,9 +152,9 @@ class JobpositionsModel extends ListModel
 		$orderCol  = $this->state->get('list.ordering', 'a.id');
 		$orderDirn = $this->state->get('list.direction', 'ASC');
 
-		if ($orderCol === 'title') {
+		if ($orderCol === 'job_position_name') {
             $ordering = [
-                $db->quoteName('a.title') . ' ' . $db->escape($orderDirn),
+                $db->quoteName('a.job_position_name') . ' ' . $db->escape($orderDirn),
             ];
         } else {
             $ordering = $db->escape($orderCol) . ' ' . $db->escape($orderDirn);

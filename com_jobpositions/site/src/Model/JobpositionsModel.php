@@ -123,7 +123,7 @@ class JobpositionsModel extends ListModel
 		if (!empty($search))
 		{
 			$search = '%' . trim($search) . '%';
-			$query->where($db->quoteName('a.title') . ' LIKE :search')
+			$query->where($db->quoteName('a.job_position_name') . ' LIKE :search')
 			->bind(':search', $search, ParameterType::STRING);
 		}
 
@@ -131,9 +131,9 @@ class JobpositionsModel extends ListModel
 		$orderCol  = $this->state->get('list.ordering', 'a.id');
 		$orderDirn = $this->state->get('list.direction', 'ASC');
 
-		if ($orderCol === 'title') {
+		if ($orderCol === 'job_position_name') {
             $ordering = [
-                $db->quoteName('a.title') . ' ' . $db->escape($orderDirn),
+                $db->quoteName('a.job_position_name') . ' ' . $db->escape($orderDirn),
             ];
         } else {
             $ordering = $db->escape($orderCol) . ' ' . $db->escape($orderDirn);

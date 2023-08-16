@@ -42,7 +42,7 @@ $editIcon = '<span class="fa fa-pen-square me-2" aria-hidden="true"></span>';
 						<?php echo HTMLHelper::_('searchtools.sort', 'JSTATUS', 'a.state', $listDirn, $listOrder); ?>
 					</th>
 					<th scope="col" class="w-20">
-						<?php echo HTMLHelper::_('searchtools.sort', 'JGLOBAL_TITLE', 'a.title', $listDirn, $listOrder); ?>
+						<?php echo HTMLHelper::_('searchtools.sort', 'JGLOBAL_TITLE', 'a.job_position_name', $listDirn, $listOrder); ?>
 					</th>
 					<th scope="col" class="w-25">
 						<?php echo HTMLHelper::_('searchtools.sort', 'COM_JOBPOSITIONS_JOBPOSITIONS_LABEL_POSITION_NAME', 'a.job_position_name', $listDirn, $listOrder); ?>
@@ -87,7 +87,7 @@ $editIcon = '<span class="fa fa-pen-square me-2" aria-hidden="true"></span>';
 					</td>
 					<th scope="row" class="has-context">
 						<a class="hasTooltip" href="<?php echo Route::_('index.php?option=com_jobpositions&task=jobposition.edit&id=' . $item->id); ?>">
-							<?php echo $editIcon; ?><?php echo $this->escape($item->title); ?>
+							<?php echo $editIcon; ?><?php echo $this->escape($item->job_position_name); ?>
 						</a>
 					</th>
 					<td class="">

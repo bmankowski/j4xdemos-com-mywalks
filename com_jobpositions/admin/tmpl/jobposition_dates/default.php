@@ -28,7 +28,7 @@ $states = array (
 		'-2' => Text::_('JTRASHED')
 );
 $editIcon = '<span class="fa fa-pen-square me-2" aria-hidden="true"></span>';
-$title = JobpositionsHelper::getWalkTitle($this->state->get('walk_id'))->title;
+$title = JobpositionsHelper::getWalkTitle($this->state->get('walk_id'))->job_position_name;
 $walk_id = $this->state->get('walk_id')
 ?>
 <h3><?php echo Text::_('COM_JOBPOSITIONS_JOBPOSITION_DATES_PAGE_TOP') . ' ' . $walk_id . ': ' . $title; ?></h3>
