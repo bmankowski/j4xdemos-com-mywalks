@@ -3,6 +3,8 @@
 -- Table structure for table `#__jobpositions`
 --
 
+-- drop table `#__jobpositions`;
+
 CREATE TABLE IF NOT EXISTS `#__jobpositions` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `job_position_name` varchar(128) NOT NULL,
@@ -72,7 +74,7 @@ INSERT IGNORE INTO `#__jobpositions` (`id`, `job_position_name` ,`job_descriptio
 (26, 'Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
 (27, 'Analityk Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
 (28, 'Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(29, 'Analityk HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''));
+(29, 'Analityk HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, '');
 
 -- --------------------------------------------------------
 
