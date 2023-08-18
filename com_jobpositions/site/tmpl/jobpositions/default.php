@@ -17,6 +17,8 @@ $listDirn = $this->escape($this->state->get('list.direction'));
 ?>
 <script src="/getProjects/filter_list.js" defer=""></script>
 
+
+
 <div class="skk_filters">
     <div class="skk_filter_option">
         <div>

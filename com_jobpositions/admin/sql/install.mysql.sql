@@ -1,102 +1,80 @@
-
---
--- Table structure for table `#__jobpositions`
---
-
--- drop table `#__jobpositions`;
-
-CREATE TABLE IF NOT EXISTS `#__jobpositions` (
-  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `job_position_name` varchar(128) NOT NULL,
-  `job_remuneration` varchar(128) NOT NULL,
-  `job_description` text NOT NULL,
-  `job_location` text NOT NULL,
-  `job_start_date` date NOT NULL,
-  `job_end_date` date NOT NULL,
-  `job_contract_type` text NOT NULL,
-  `job_part_of_employment` text NOT NULL, --part-time, full-time
-  `job_level` text NOT NULL,
-  `job_employment_type` text NOT NULL, --hybrid, on-site
-  `job_recruitment_type` text NOT NULL,
-  `job_technologies_required` text NOT NULL,
-  `job_technologies_nice_to_have` text NOT NULL,
-  `job_operating systems` text NOT NULL,
-  `job_duties` text NOT NULL,
-  `job_requirements` text NOT NULL,
-  `job_nice_to_have` text NOT NULL,
-  `job_project_management_system` text NOT NULL,
-  `job_what_to_offer` text NOT NULL,
-  `job_sportcard` tinyint(1) NOT NULL DEFAULT '0',
-  `job_healthplan` tinyint(1) NOT NULL DEFAULT '0',
-  `job_lifeinsurance` tinyint(1) NOT NULL DEFAULT '0',
-  `description` text NOT NULL,
-  `distance` decimal(10,0) NOT NULL,
-  `toilets` tinyint(1) NOT NULL DEFAULT '0',
-  `cafe` tinyint(1) NOT NULL DEFAULT '0',
-  `hills` int(11) NOT NULL DEFAULT '0',
-  `bogs` int(11) NOT NULL DEFAULT '0', 
-  `picture` varchar(128) DEFAULT NULL,
-  `width` int(11) DEFAULT NULL,
-  `height` int(11) DEFAULT NULL,
-  `alt` varchar(64) DEFAULT NULL,
-  `state` TINYINT NOT NULL DEFAULT '1'
+CREATE TABLE IF NOT EXISTS #__jobpositions (
+  id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  job_position_name varchar(128) NOT NULL,
+  job_remuneration_from varchar(128) ,
+  job_remuneration_to varchar(128) ,
+  job_remuneration_unit varchar(128) ,
+  job_description text NOT NULL,
+  job_location text ,
+  job_start_date date ,
+  job_end_date date ,
+  job_contract_type text ,
+  job_part_of_employment text , 
+  job_level text ,
+  job_employment_type text , 
+  job_recruitment_type text ,
+  job_technologies_required text ,
+  job_technologies_optional text ,
+  job_operating_systems text ,
+  job_duties text ,
+  job_requirements text ,
+  job_requirements_optional text ,
+  job_project_management_system text ,
+  job_what_to_offer text ,
+  job_sportcard tinyint(1)  DEFAULT '0',
+  job_healthplan tinyint(1)  DEFAULT '0',
+  job_lifeinsurance tinyint(1)  DEFAULT '0',
+  description text ,
+  distance decimal(10,0) ,
+  toilets tinyint(1) NOT NULL DEFAULT '0',
+  cafe tinyint(1) NOT NULL DEFAULT '0',
+  hills int(11) NOT NULL DEFAULT '0',
+  bogs int(11) NOT NULL DEFAULT '0', 
+  picture varchar(128) DEFAULT NULL,
+  width int(11) DEFAULT NULL,
+  height int(11) DEFAULT NULL,
+  alt varchar(64) DEFAULT NULL,
+  state TINYINT NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci;
 
 -- 
--- Dumping data for table `#__jobpositions`
+-- Dumping data for table #__jobpositions
 -- 
 
-INSERT IGNORE INTO `#__jobpositions` (`id`, `job_position_name` ,`job_description`,`job_location`,`job_start_date`,`job_end_date`, `description`, `distance`, `toilets`, `cafe`, `hills`, `bogs`, `picture`, `width`, `height`, `alt`) VALUES
-(1, '1Analityk SQL', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Warszawa','2023-01-01','2024-06-01', 'Walks somewhere','5', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(2, '2Programista SAS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Kraków','2023-01-11','', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
-(3, '3Programista Senior Vue', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Gdańsk','2023-01-15','', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),
-(4, '4Programista Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(5, '5Programista HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(6, '6Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(7, '7Analityk Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(8, '8Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(9, '9Analityk HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(10,'10Analityk Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(11,'11Programista Python / Django', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Wrocław','2023-03-7','', 'Walk along the line of the old railway track from start point car park to Thing castle', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(12, '12Programista SAS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Kraków','2023-01-11','', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
-(13, '13Programista Senior Vue', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Gdańsk','2023-01-15','', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),
-(14, '14Programista Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(15, '15Programista HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(16, '16Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(17, '17Analityk Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(18, '18Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(19, '19Analityk HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(20,'20Analityk Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(21,'21Programista Python / Django', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Wrocław','2023-03-7','', 'Walk along the line of the old railway track from start point car park to Thing castle', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(22, '22Programista SAS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Kraków','2023-01-11','', 'Woodland walk on hard paths', '4', 0, 0, 1, 1, NULL, NULL, NULL, ''),
-(23, '23Programista Senior Vue', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Gdańsk','2023-01-15','', 'Hill walk with good views on established path.', '6', 0, 0, 3, 2, NULL, NULL, NULL, ''),
-(24, '24Programista Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(25, '25Programista HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(26, '26Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(27, '27Analityk Java', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(28, '28Analityk CSS', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, ''),
-(29, '29Analityk HTML', '<h1>Kogo szukamy</h1>Prawdopodobnie Ciebie!','Siedlce','2023-02-6','', 'Walk around the lake on an accessible path.', '2', 1, 1, 0, 0, NULL, NULL, NULL, '');
+
+INSERT INTO #__jobpositions (job_position_name, job_remuneration_from, job_remuneration_to, job_remuneration_unit, job_description, job_location, job_start_date, job_end_date, job_contract_type, 
+job_part_of_employment, job_level, job_employment_type,job_recruitment_type,job_technologies_required, job_technologies_optional, job_operating_systems, job_duties, 
+job_requirements,job_requirements_optional,job_project_management_system,
+job_what_to_offer,
+job_sportcard,job_healthplan,job_lifeinsurance) VALUES 
+("Analityk SQL", "12000", "15000", "netto (+ VAT) mies.", "Praca w stabilnej firmie, która od 12 lat stale obsługuje T-Mobile i Orange, a obecnie także szybko rozwija świadczenie usług dla innych klientów na rynku krajowym i międzynarodowym", 
+"Warszawa", "2023-01-01", "2024-06-01", "umowa zlecenie, kontrakt B2B","Cały etat","specjalista (Mid / Regular)","praca hybrydowa","rekrutacja zdalna","<ul><li>SQL</li>NOSQL<li></li><li>Konteneryzacja</li></ul>","<ul><li>ORACLE</li>Git<li></li><li>Java</li></ul>","<ul><li>Linux</li></ul>","<ul><li>Administracja i utrzymanie systemów OSS </li><li>Instalacja i utrzymanie środowisk opartych o systemy: Linux, bazy danych typu Sql i NoSql</li></ul>",
+"<ul><li>SQL</li><li></li><li></li></ul>","<ul><li>SQL</li><li></li><li></li></ul>","<ul><li>Doświadczenie w administracji relacyjnych baz danych jak Oracle, MySQL</li></ul>",
+"<ul><li>SQL</li>Dołączenie do doświadczonego zespołu profesjonalistów, którzy chętnie dzielą się swoją wiedzą i umiejętnościami<li></li><li>Dostęp do najnowszych technologii i rozbudowanego środowiska IT</li></ul>",
+true, true, false)
+;
+
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `#__jobposition_dates`
+-- Table structure for table #__jobposition_dates
 --
 
-CREATE TABLE IF NOT EXISTS `#__jobposition_dates` (
-  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `walk_id` int(11) NOT NULL,
-  `date` date NOT NULL,
-  `weather` varchar(256) DEFAULT NULL,
-  `state` TINYINT NOT NULL DEFAULT '1',
-  KEY `idx_walk` (`walk_id`)
+CREATE TABLE IF NOT EXISTS #__jobposition_dates (
+  id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  walk_id int(11) NOT NULL,
+  date date NOT NULL,
+  weather varchar(256) DEFAULT NULL,
+  state TINYINT NOT NULL DEFAULT '1',
+  KEY idx_walk (walk_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `#__jobposition_dates`
+-- Dumping data for table #__jobposition_dates
 --
 
-INSERT IGNORE INTO `#__jobposition_dates` (`id`, `walk_id`, `date`, `weather`) VALUES
+INSERT IGNORE INTO #__jobposition_dates (id, walk_id, date, weather) VALUES
 (1, 1, '2019-05-12', 'Dry and Sunny'),
 (2, 2, '2019-06-09', 'Wet and Windy'),
 (3, 3, '2019-01-01', 'Cold and wet'),
